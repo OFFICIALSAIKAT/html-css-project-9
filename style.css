@@ -1,0 +1,177 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+header{
+  background-color: blue;
+  height: 500px;
+}
+nav{
+  display: flex;
+  margin-left: 900px;
+}
+.logo{
+  display: flex;
+  position: absolute;
+  top: 0px;
+  padding: 15px;
+  
+}
+.nav-item{
+  
+  padding: 20px;
+  color: white;
+}
+.nav-item-active{
+  padding: 20px;
+  color: white;
+}
+.header-text{
+  width: 100%;
+  margin-top: 150px;
+  padding: 20px;
+}
+.header-text h2{
+color: white;
+font-size: 40px;
+}
+.header-text p{
+  color: white;
+}
+.header-image{
+  position: absolute;
+  left: 955px;
+  bottom: 160px;
+}
+.companies{
+  font-size: 20px;
+  padding: 20px;
+  align-items: center;
+ 
+}
+.company-items{
+  padding: 20px;
+}
+.api{
+padding: 20px;
+ 
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+  .blog-cards{
+  display: flex;
+  justify-content: space-between; 
+  margin: 10px 10px;
+
+  
+  
+}
+.blog-card{
+  display: flex;
+  font-size: 18px;
+  background-color: #fff;
+  width: 800px;
+  border-style: outset;
+
+}
+.blog-content{
+  padding: 0px 20px;
+
+}
+.blog-heading{
+  padding: 0px 20px;
+}
+.faq-section{
+  display: flex;
+  width: 1510px;
+  height: 300px;
+  background-color:rgb(164, 164, 239);
+}
+
+.faq-image img{
+  margin-left: 110px;
+  height: 300px;
+  width:750px;
+  padding-left: 30px;
+}
+.faq-content{
+  margin: 20px;
+  
+}
+.faq-content h2{
+  padding: 10px 0px;
+}
+.faq-content h4{
+  padding: 10px 0px;
+}
+.download-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 90px 20px;
+}
+.download-email{
+  margin-right: 150px;
+}
+.download-email input{
+  width: 280px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(193, 193, 251);
+ 
+}
+.download-email button{
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: blue;
+  color: white;
+}
+.footer-section{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(118, 118, 246);
+  
+}
+.footer-left{
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  padding: 22px 0px;
+  
+}
+.list{ 
+  display: flex;
+  list-style: none;
+  
+}
+.list-items{
+  padding: 10px;
+} 
+.logos-list{
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+.footer-right{
+  margin: 15px;
+}
+.faq-button{
+  height: 40px;
+  width: 110px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: blue;
+}
