@@ -1,177 +1,393 @@
-/* POPPINS FONT FAMILY */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
-* {
-  font-family: "Poppins", sans-serif;
-}
 *{
-  margin: 0px;
-  padding: 0px;
-}
-header{
-  background-color: blue;
-  height: 500px;
+    margin: 0px;
+    padding: 0px;
 }
 nav{
-  display: flex;
-  margin-left: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
-.logo{
-  display: flex;
-  position: absolute;
-  top: 0px;
-  padding: 15px;
-  
+nav .navigation ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
 }
-.nav-item{
-  
-  padding: 20px;
-  color: white;
+nav .navigation .item{
+    padding: 0px 20px;
+    font-size: 1.2rem;
+    color: white;
 }
-.nav-item-active{
-  padding: 20px;
-  color: white;
+
+/* hero-section */
+.hero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    height: 60vh;
+    width: 90%;
+    margin: auto;
+   
 }
-.header-text{
-  width: 100%;
-  margin-top: 150px;
-  padding: 20px;
+.hero-left{
+    margin-top: 220px;
+    
+   
 }
-.header-text h2{
-color: white;
-font-size: 40px;
+.hero-left h1 {
+    color: white;
+    font-size: 2.5rem;
 }
-.header-text p{
-  color: white;
+.hero-left p{
+    color: white;
+    font-size: 1.5rem;
 }
-.header-image{
-  position: absolute;
-  left: 955px;
-  bottom: 160px;
+.hero-right img{
+    position: absolute;
+    height: 500px;
+    width: 760px;
 }
+#bg{
+    background: #0000FF;
+}
+
+/* companies */
+
 .companies{
-  font-size: 20px;
-  padding: 20px;
-  align-items: center;
- 
+   font-size: 1.5rem;
+   margin-top: 20px;
+   padding: 0 20px 10px 70px;
+   
+  
 }
-.company-items{
-  padding: 20px;
+.companies a{
+    text-decoration: none;
+    padding:  0 20px 10px 0px;
+}
+
+/* mid-1-section */
+.mid{
+    width: 90%;
+    margin: auto;
 }
 .api{
-padding: 20px;
- 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+   
 }
-.cards{
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
+.mid h1{
+    font-size: 2.2rem;
+    padding: 20px 0;
 }
-  .blog-cards{
-  display: flex;
-  justify-content: space-between; 
-  margin: 10px 10px;
+.card{
+    padding: 15px 0;
+}
+.card h4{
+    font-size: 20px;
+}
+.card p{
+    font-size: 15px ;
+}
 
-  
-  
+/* blogs */
+
+.blog-head{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+   
+    
 }
+
+
+
+
 .blog-card{
-  display: flex;
-  font-size: 18px;
-  background-color: #fff;
-  width: 800px;
-  border-style: outset;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px,1fr));
+    gap: 1.5rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.blog-left-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
+}
+.blog-right-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px,1fr));
+}
+.blog-image{
+    width: 300px;
+    height: 300px;
+   
+}
+.blog-left-content p{
+    font-size: 1.2rem;
+    padding-bottom: 35px;
+}
 
+/* questions */
+.question{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px,1fr));
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
 }
-.blog-content{
-  padding: 0px 20px;
+.question-left{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.question-left h1{
+    font-size: 2.5rem;
+    padding-bottom: 20px;
+}
+.question-left p{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+.question-left h4{
+    padding-bottom: 20px ;
+}
+.question-left button{
+    height: 40px;
+    width: 110px;
+    color: white;
+    background: #0000FF;
+    border: none;
+}
+.question-right img{
+    width: 690px;
+}
 
+/* downloads */
+.download{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 50px auto;
+    
 }
-.blog-heading{
-  padding: 0px 20px;
+.download-left h3{
+    font-size: 2.5rem;
 }
-.faq-section{
-  display: flex;
-  width: 1510px;
-  height: 300px;
-  background-color:rgb(164, 164, 239);
+.download-right{
+    position: relative;
+}
+.download-right input{
+    height: 35px;
+    width: 400px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+   border: none;
+   background: #b7b7ed;
+   
+}
+.download-right button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 36px;
+    width: 110px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background: #0000FF;
+}
+span{
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-.faq-image img{
-  margin-left: 110px;
-  height: 300px;
-  width:750px;
-  padding-left: 30px;
+/* footer-section */
+
+footer{
+    background: #0000FF;
 }
-.faq-content{
-  margin: 20px;
-  
+.main-footer{
+   
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    height: 200px;
+   
+   
 }
-.faq-content h2{
-  padding: 10px 0px;
+.footer-item ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
-.faq-content h4{
-  padding: 10px 0px;
-}
-.download-section{
-  display: flex;
-  justify-content: space-between;
-  margin: 90px 20px;
-}
-.download-email{
-  margin-right: 150px;
-}
-.download-email input{
-  width: 280px;
-  height: 30px;
-  border-radius: 10px;
-  border: none;
-  background-color: rgb(193, 193, 251);
- 
-}
-.download-email button{
-  width: 120px;
-  height: 30px;
-  border-radius: 10px;
-  border: none;
-  background-color: blue;
-  color: white;
-}
-.footer-section{
-  display: flex;
-  justify-content: space-between;
-  background-color: rgb(118, 118, 246);
-  
+.footer-item ul li{
+    list-style: none;
+    padding: 10px 20px 0 0;
+    color: white;
 }
 .footer-left{
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-  padding: 22px 0px;
-  
-}
-.list{ 
-  display: flex;
-  list-style: none;
-  
-}
-.list-items{
-  padding: 10px;
-} 
-.logos-list{
-  display: flex;
-  list-style: none;
-  margin-right: 20px;
+    padding-top: 50px;
 }
 .footer-right{
-  margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding-top: 50px;
 }
-.faq-button{
-  height: 40px;
-  width: 110px;
-  border-radius: 10px;
-  border: none;
-  color: white;
-  background-color: blue;
+.faq ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
+.faq ul li{
+    color: white;
+}
+.faq-links{
+    list-style: none;
+    padding: 10px 20px 0 0;
+}
+.social-icons img{
+    padding: 10px 20px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and  (max-width: 1208px){
+    .question-right{
+        display: none;
+    }
+    footer{
+        background: #0000FF;
+    }
+}
+
+
+
+
+@media only screen and  (max-width: 1100px){
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(520px,1fr));
+        width: 100%;
+        height: 65vh;
+       
+    }
+    .hero-left{
+        margin-top: 10px;
+    }
+    .hero-right img{
+        margin-top: 20px;
+       position:static;
+        height: 500px;
+        width: 770px;
+    }
+    .api{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+}
+
+
+
+}
+@media only screen and (max-width: 600px){
+    .hero{
+        height: 100vh;
+    }
+    #bg{
+        background: none;
+    }
+    nav .navigation .item{
+        color:#0000FF ;
+    }
+    .hero-left h1 {
+        color: #0000FF;
+        font-size: 2.5rem;
+    }
+    .hero-left p{
+        color: #0000FF;
+        font-size: 1.5rem;
+    }
+    footer{
+        background: none;
+    }
+    .faq ul li{
+        color: black;
+    }
+    .footer-item ul li{
+        color: black;
+    }
+    .footer-item ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .main-footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+        width: 100%;
+        height: 50vh;
+      
+        
+       
+    }
+    .footer-right{
+        display: flex;
+        align-items: flex-start;
+    }
+    
+}
+
